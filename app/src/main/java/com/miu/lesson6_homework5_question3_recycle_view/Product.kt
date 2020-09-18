@@ -1,6 +1,12 @@
 package com.miu.lesson6_homework5_question3_recycle_view
 
-
-data class Product(val title:String,val price:Double,val color:String,val imageName:Int,val itemid:String="", val descProduct:String="'"){
-
+class Product {
+    var name:String? =null
+    var des:String? =null
+    var image:Int? =null
+    constructor(name:String,des:String,image:Int){
+        this.name=name
+        this.des=des
+        this.image=image
+    }
 }
